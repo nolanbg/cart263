@@ -1,3 +1,3 @@
-# Template p5 project
+# AI 
 
-This is the README file for the entire project. For more official projects you should write information here about the nature of the project, your name, any special explanations of how the project works, etc.
+A program that uses ml5.js and p5.js for a short interactive experience
