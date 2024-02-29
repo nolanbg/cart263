@@ -1,0 +1,43 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  /* Black background for stark contrast */
+  color: #0f0;
+  /* Bright green text for high contrast */
+  font-family: 'Courier New', monospace;
+  /* Monospaced font for a raw look */
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  /* Center the canvas with more space */
+  border: 5px solid #f00;
+  /* Thick, red border for stark contrast */
+  background-color: #333;
+  /* Dark background for the video to pop */
+}
+
+/* Ensure text and UI elements have a raw, unstyled appearance */
+text {
+  font-size: 20px;
+  /* Larger, more noticeable text */
+  text-transform: uppercase;
+  /* Adds to the mechanical feel */
+}
+
+/* You might add more specific styles for buttons, links, or other interactive elements */
+button {
+  background: #333;
+  /* Dark backgrounds */
+  color: #fff;
+  /* White text */
+  border: 2px solid #f00;
+  /* Red borders */
+  font-family: inherit;
+  /* Keeps the monospace font */
+  cursor: pointer;
+  /* Indicates interactivity */
+}
