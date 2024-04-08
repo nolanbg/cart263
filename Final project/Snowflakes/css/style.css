@@ -1,0 +1,71 @@
+/* Styling for the whole page */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f0f, #112233);
+  color: #FF0000;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+}
+#left-image,
+#right-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  background-image: url('emblemcolour.0.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  
+}
+
+#left-image {
+  left: 0;
+}
+
+#right-image {
+  right: 0;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #FF0000;
+  background-color: #333;
+  box-shadow: 0 0 20px #FF0000;
+  /* Neon glow effect */
+  border-radius: 10px;
+}
+
+
+text {
+  font-size: 20px;
+  color: #FF0000;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #FF0000;
+  /* Glowing text effect */
+}
+
+
+button {
+  background: linear-gradient(45deg, #333, #555);
+  color: #FF0000;
+  border: 2px solid #FF0000;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.5s;
+  /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background: linear-gradient(45deg, #555, #777);
+  transform: scale(1.1);
+  /* Slightly enlarge button on hover */
+  box-shadow: 0 0 20px #FF0000;
+  /* Glowing effect on hover */
+}
+
+/* Additional styling can be added for other interactive elements like links, icons, etc., to enhance the futuristic feel */
