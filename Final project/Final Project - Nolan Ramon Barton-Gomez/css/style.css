@@ -1,0 +1,346 @@
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url('02b.gif');;
+  background-size: cover;
+  /* Dark solid background */
+  color: #FFF;
+  /* White text for high contrast */
+  font-family: 'Neuropol', sans-serif;
+  /* Keeping the techno-futuristic font */
+  overflow: hidden;
+  /* Disable scrolling on the body */
+  height: 100%;
+  /* Full height */
+  font-family: 'Neuropol', sans-serif;
+  src: url('Neuropol.ttf') format('truetype');
+    /* Update the path as necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+#link button {
+  background-color: transparent;
+  transform: translateX(1000%) translateY(50vh);
+  color: #FFF;
+  padding: 10px 20px;
+  border: 1px solid #FFF;
+  /* Sleek white border */
+  border-radius: 50px;
+  /* Rounded buttons for a modern look */
+  font-family: 'Neuropol', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  /* Stylistic choice for futuristic font */
+  letter-spacing: 1px;
+  /* Spacing out the letters slightly */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for hover effect */
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  /* Removing default focus outline for a cleaner look */
+}
+#link button:hover {
+  background-color: #FFF;
+  /* White background on hover */
+  color: #000;
+  /* Black text on hover */
+}
+#words button {
+  background-color: transparent;
+  
+  color: #FFF;
+  padding: 10px 20px;
+  border: 1px solid #FFF;
+  /* Sleek white border */
+  border-radius: 50px;
+  /* Rounded buttons for a modern look */
+  font-family: 'Neuropol', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  /* Stylistic choice for futuristic font */
+  letter-spacing: 1px;
+  /* Spacing out the letters slightly */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for hover effect */
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  /* Removing default focus outline for a cleaner look */
+}
+
+#words button:hover {
+  background-color: #FFF;
+  /* White background on hover */
+  color: #000;
+  /* Black text on hover */
+}
+#audio-controls button {
+  background-color: transparent;
+  color: #FFF;
+  padding: 10px 20px;
+  border: 1px solid #FFF;
+  /* Sleek white border */
+  border-radius: 50px;
+  /* Rounded buttons for a modern look */
+  font-family: 'Neuropol', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  /* Stylistic choice for futuristic font */
+  letter-spacing: 1px;
+  /* Spacing out the letters slightly */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for hover effect */
+  cursor: pointer;
+  outline: none;
+  /* Removing default focus outline for a cleaner look */
+}
+
+#audio-controls select {
+  background-color: transparent;
+  color: #FFF;
+  padding: 5px 10px;
+  border: 1px solid #FFF;
+  border-radius: 40px;
+  font-family: 'Neuropol', sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  /* This disables the native dropdown arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%ffffff" d="M1 1l6 6 6-6" stroke="%FFFFFF" stroke-width="2"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  /* Position the custom arrow to the right */
+  background-size: 14px;
+}
+#audio-controls select:hover {
+  background-color: #FFF;
+  /* White background on hover */
+  color: #000;
+  /* Black text on hover */
+}
+#audio-controls button:hover {
+  background-color: #FFF;
+  /* White background on hover */
+  color: #000;
+  /* Black text on hover */
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  /* Override default appearance */
+  width: 100%;
+  background: transparent;
+  /* Transparent background */
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #FFF;
+  height: 2px;
+  /* Thin track */
+  border-radius: 1.5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  /* Larger thumb for easy sliding */
+  width: 16px;
+  border-radius: 50%;
+  /* Circular thumb */
+  background: #FFF;
+  margin-top: -7px;
+  /* Align thumb with the track */
+  transition: background-color 0.3s;
+  /* Smooth transition for thumb */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #DDD;
+  /* Light grey background on hover */
+}
+
+input[type="range"]:focus {
+  outline: none;
+  /* Removing default focus outline */
+}
+
+input[type="range"]::-moz-range-track {
+  background: #FFF;
+  height: 2px;
+  border-radius: 1.5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #FFF;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+input[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-thumb {
+  background: #FFF;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+#audio-controls {
+  position: absolute;
+  transform: translateX(-190%);
+  bottom: 10%; 
+  right: 15%; 
+  width: 10%; 
+  z-index: 1000; 
+  color: white; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+input[type="range"] {
+  width: 100%; 
+}
+#right-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  height: 100%;
+  background-image: url('giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1000; /* Ensure they stay on top */
+}
+
+#right-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%; /* Adjust the width of the gradient effect */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  z-index: 1001;
+}
+
+#emblem-image {
+  position: absolute;
+  /* Change from fixed to absolute */
+  right: 0px;
+  /* Align to the right edge of the image-scroll-container */
+  top: 10%;
+  /* Initially position it at the vertical center */
+  transform: translateY(-50%);
+  /* Center it vertically around its position */
+  transform: translateX(-50%);
+    /* Center it vertically around its position */
+  z-index: 2000;
+  /* Maintain high z-index to ensure it's above the other content within the container */
+  width: 100px;
+  /* Set width as necessary */
+  height: 2000px;
+  /* Maintain aspect ratio */
+}
+
+#image-scroll-container {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  /* Adjust based on the width of your fixed elements */
+  right: 15%;
+  bottom: 0;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  overflow-x: hidden;
+  /* Disable horizontal scrolling */
+  z-index: 500;
+  /* Lower than fixed elements */
+  scrollbar-width: thin;
+  /* 'auto' or 'thin' */
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
+}
+
+#image-scroll-container::-webkit-scrollbar {
+  width: 12px;
+  /* Adjust the width of the scrollbar to your preference */
+}
+
+#image-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+  /* Make scrollbar track transparent */
+}
+
+#image-scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Make scrollbar handle transparent */
+}
+#sliders {
+  -webkit-appearance: none;
+  /* Override default appearance */
+  width: 400px;
+  /* Height of the slider when vertical */
+  height: 10px;
+  /* The track width in horizontal becomes the height in vertical */
+  background: transparent;
+  /* Transparent background */
+  cursor: pointer;
+  
+  transform: rotate(270deg);
+  /* Rotate slider to vertical */
+  /* Center the slider vertically and position at desired place horizontally */
+  position: absolute;
+  top: 190%;
+  left: -200%;
+  transform-origin: center;
+  /* Ensure rotation pivots around the center */
+}
+
+#sliders ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ffffff;
+  /* Green background for the thumb */
+  width: 20px;
+  /* Set the width of the thumb */
+  height: 20px;
+  /* Set the height of the thumb */
+  border-radius: 50%;
+  /* Round shape */
+}
+
+#sliders::-webkit-slider-runnable-track {
+  background: #ddd;
+  /* Light grey track */
+  height: 100%;
+  /* Full height of the track */
+  width: 10px;
+  /* Track thickness */
+}
+
+#sliders:focus {
+  outline: none;
+  /* Remove default focus outline */
+}
+canvas {
+  position: fixed;
+  z-index: 500;
+}

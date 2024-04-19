@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+
+  <title>CONVERGENCE AND DISSONANCE (Nolan Ramon Barton-Gomez)</title>
+
+  <!-- CSS stylesheet(s) -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style>
+    @font-face {
+      font-family: 'Neuropol';
+      src: url('Neuropol.ttf') format('truetype');
+      /* Ensure the path matches where you store your font files */
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    body {
+      font-family: 'Neuropol', sans-serif;
+      /* Apply Neuropol font globally */
+    }
+    @keyframes flickerAnimationStatic {
+    0%,
+      19%,
+      21%,
+      23%{
+        opacity: 0;
+        top: 25px;
+      }
+      25%,
+      27%,
+      29%,
+      100% {
+        opacity: 1;
+        top: 40px;
+      }
+  
+      20%,
+      22%{
+        opacity: 0.5;
+        top: 40px;
+      }
+      24%,
+      26%,
+      28% {
+        opacity: 0;
+        top: 60px;
+        /* Make the title move slightly downwards when it flickers off */
+      }
+  }
+    @keyframes flickerAnimation {
+  
+      0%,
+      19%,
+      21%,
+      23%{
+        opacity: 0;
+        top: 20px;
+      }
+      25%,
+      27%,
+      29%,
+      100% {
+        opacity: 1;
+        top: 40px;
+      }
+  
+      20%,
+      22%{
+        opacity: 0.5;
+        top: 50px;
+      }
+      24%,
+      26%,
+      28% {
+        opacity: 0;
+        top: 70px;
+        /* Make the title move slightly downwards when it flickers off */
+      }
+    }
+  
+    #flickering-title, #static-flickering-title {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      /* Initial position */
+      font-size: 24px;
+      letter-spacing: 20px;
+      /* Increase letter spacing to stretch the title */
+      color: white;
+      font-family: 'Neuropol', sans-serif;
+      animation: flickerAnimation 3s infinite;
+      /* Flicker effect including position and opacity changes */
+      text-align: right;
+      margin: 10px;
+    }
+    #flickering-title {
+    animation: flickerAnimation 3s infinite;  /* Original flickering effect including position and opacity changes */
+  }
+
+  #static-flickering-title {
+    animation: flickerAnimationStatic 3s infinite;  /* New static flickering effect */
+  }
+  </style>
+  
+  <!-- Library script(s) -->
+  <script src="js/libraries/p5.min.js"></script>
+  <script src="js/libraries/p5.sound.min.js"></script>
+  <script src="js/libraries/p5.speech.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.9.0/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.speech.js"></script>
+
+  <!-- My script(s) -->
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <div id="flickering-title">CONVERGENCE<br>AND<br>DISSONANCE<br><br><br>GashMouth©</div>
+  <div id="static-flickering-title">CONVERGENCE<br>AND<br>DISSONANCE<br><br><br>GashMouth©</div> 
+  <div id="link">
+    <a href="index2.html"><button onclick="document.location='index2.html'">Next</button></a>
+    <button onclick="speakRandomWord()">Poem Words</button>
+  </div>
+  <div id="words">
+    <button onclick="speakRandomWord()">Poem Words</button>
+  </div>
+</body>
+
+</html>
